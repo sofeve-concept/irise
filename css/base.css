@@ -952,6 +952,7 @@ button.btn-outline.blanc:hover {
      margin-right:-.125rem;
   mask-image: url('../images/arrow-turn-down-solid.svg');
 }
+
 .back {
   padding: 0.75rem 0.5rem 0.5rem 0;
   float: left;
@@ -1973,6 +1974,48 @@ footer[role="contentinfo"] ul.direct li {
 footer[role="contentinfo"] ul.direct li img {
   height: 0.9em;
   padding-right: 0.25em;
+}
+.mail::before {
+  --icon-size:1rem;
+  background-color:var(--NOIR-color);
+  display:inline-block;
+  flex:none;
+  height:var(--icon-size);
+  mask-size:100% 100%;
+  vertical-align:calc(.375em - var(--icon-size) * .5);
+  width:var(--icon-size);
+  content:"";
+  margin-right:0.255rem;
+  margin-left: -1.25rem;
+  mask-image: url('../images/square-envelope-solid.svg');
+}
+.phone::before {
+  --icon-size:1rem;
+  background-color:var(--NOIR-color);
+  display:inline-block;
+  flex:none;
+  height:var(--icon-size);
+  mask-size:100% 100%;
+  vertical-align:calc(.375em - var(--icon-size) * .5);
+  width:var(--icon-size);
+  content:"";
+  margin-right:0.255rem;
+  margin-left: -1.25rem;
+  mask-image: url('../images/square-phone-solid.svg');
+}
+.fb::before {
+  --icon-size:1rem;
+  background-color:var(--NOIR-color);
+  display:inline-block;
+  flex:none;
+  height:var(--icon-size);
+  mask-size:100% 100%;
+  vertical-align:calc(.375em - var(--icon-size) * .5);
+  width:var(--icon-size);
+  content:"";
+  margin-right:0.255rem;
+  margin-left: -1.25rem;
+  mask-image: url('../images/square-facebook-brands-solid.svg');
 }
 footer[role="contentinfo"] a {
   color: var(--NOIR-color);
