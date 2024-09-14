@@ -908,7 +908,7 @@ button.btn-outline.blanc:hover {
   border: 1px solid var(--FUSCHIA-color);
   color: var(--FUSCHIA-color);
 }
-/* .plus::after {
+.plus::after {
      --icon-size:1rem;
      background-color:currentColor;
      display:inline-block;
@@ -920,16 +920,9 @@ button.btn-outline.blanc:hover {
      content:"";
      margin-left:.5rem;
      margin-right:-.125rem;
-     -webkit-mask-image:url(data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2224%22%20height=%2224%22%3E%3Cpath%20d=%22M11%2011V7h2v4h4v2h-4v4h-2v-4H7v-2h4zm1%2011C6.48%2022%202%2017.52%202%2012S6.48%202%2012%202s10%204.48%2010%2010-4.48%2010-10%2010zm0-2c4.42.0%208-3.58%208-8s-3.58-8-8-8-8%203.58-8%208%203.58%208%208%208z%22/%3E%3C/svg%3E);
-     mask-image:url(data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2224%22%20height=%2224%22%3E%3Cpath%20d=%22M11%2011V7h2v4h4v2h-4v4h-2v-4H7v-2h4zm1%2011C6.48%2022%202%2017.52%202%2012S6.48%202%2012%202s10%204.48%2010%2010-4.48%2010-10%2010zm0-2c4.42.0%208-3.58%208-8s-3.58-8-8-8-8%203.58-8%208%203.58%208%208%208z%22/%3E%3C/svg%3E)
-   } */
-.plus::after {
-  font-family: "Font Awesome 6 Free";
-  content: "\f135";
-  font-size: 0.75em;
-  padding-left: 0.25em;
-  color: inherit;
-}
+    mask-image: url('../images/rocket-solid.svg');
+    } 
+
 .fleche::after {
   --icon-size: 1.5rem;
   background-color: currentColor;
@@ -944,9 +937,10 @@ button.btn-outline.blanc:hover {
   margin-right: -0.5rem;
   mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTE2IDEybC02IDZWNmw2IDZ6Ii8+PC9zdmc+);
 }
-/* .enbas::after {
-     --icon-size:2rem;
-     background-color:currentColor;
+
+.bas::after {
+     --icon-size:1rem;
+     background-color:var(--NOIR-color);
      display:inline-block;
      flex:none;
      height:var(--icon-size);
@@ -956,15 +950,7 @@ button.btn-outline.blanc:hover {
      content:"";
      margin-left:.5rem;
      margin-right:-.125rem;
-     mask-image:url(data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2224%22%20height=%2224%22%3E%3Cpath%20d=%22M12%2016l-6-6h12l-6%206z%22/%3E%3C/svg%3E)
-   } */
-.bas::after {
-  font-family: "Font Awesome 6 Free";
-  content: "\f3be";
-  font-size: 0.75em;
-  padding-left: 0.25em;
-  color: var(--NOIR-color);
-  font-weight: bold;
+  mask-image: url('../images/arrow-turn-down-solid.svg');
 }
 .back {
   padding: 0.75rem 0.5rem 0.5rem 0;
