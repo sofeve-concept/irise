@@ -186,7 +186,7 @@ a:focus i {
   color: var(--GRIS-color);
 }
 a[target="_blank"]:not(.nologo)::after {
-  font-family: fontawesome;
+  font-family: "Font Awesome 6 Free";
   content: "\f08e";
   font-size: 90%;
   padding-left: 0.25em;
@@ -924,7 +924,7 @@ button.btn-outline.blanc:hover {
      mask-image:url(data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2224%22%20height=%2224%22%3E%3Cpath%20d=%22M11%2011V7h2v4h4v2h-4v4h-2v-4H7v-2h4zm1%2011C6.48%2022%202%2017.52%202%2012S6.48%202%2012%202s10%204.48%2010%2010-4.48%2010-10%2010zm0-2c4.42.0%208-3.58%208-8s-3.58-8-8-8-8%203.58-8%208%203.58%208%208%208z%22/%3E%3C/svg%3E)
    } */
 .plus::after {
-  font-family: fontawesome;
+  font-family: "Font Awesome 6 Free";
   content: "\f135";
   font-size: 0.75em;
   padding-left: 0.25em;
@@ -959,7 +959,7 @@ button.btn-outline.blanc:hover {
      mask-image:url(data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2224%22%20height=%2224%22%3E%3Cpath%20d=%22M12%2016l-6-6h12l-6%206z%22/%3E%3C/svg%3E)
    } */
 .bas::after {
-  font-family: fontawesome;
+  font-family: "Font Awesome 6 Free";
   content: "\f3be";
   font-size: 0.75em;
   padding-left: 0.25em;
@@ -1376,7 +1376,7 @@ main ul.nopad li {
   padding-left: 0.5em;
 }
 main ul li::before {
-  font-family: fontawesome;
+  font-family: "Font Awesome 6 Free";
   content: "\f5bc";
   font-size: 0.75em;
   padding-right: 0.25em;
