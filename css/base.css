@@ -90,7 +90,8 @@
 
   --BODY-color: #FEF3EB;
   --PECHE-color: #fddac4;
-  --JAUNE-color: #ffa500;
+  --ORANGE-color: #FF9750;
+  --OCRE-color: #FF6700;
   --PARME-color: #CCB5E3;
   --VIOLET-color: #5e3488;
   --POUDRE-color: #fcc3f0;
@@ -104,10 +105,10 @@
   --BLEU-color: #0F51C2;
   --MARINE-color: #0C2E66;
 
-  --FOOTER-color: var(--VERT-CITRON-color);
-  --FOOTER-PIED-color: var(--VERT-GAZON-color);
+  --FOOTER-color: var(--ORANGE-color);
+  --FOOTER-PIED-color: var(--OCRE-color);
 
-  --HEADER-background-color: var(--JAUNE-color);
+  --HEADER-background-color: var(--ORANGE-color);
   --HEADER-TRANSPARENT-background-color: var(--GRIS-TRANSPARENT-color);
   --HEADER-SOUS-MENU-LINK-color: #575757;
   --HEADER-SOUS-MENU-LINK-HOVER-color: var(--POUDRE-color);
@@ -433,13 +434,13 @@ blockquote.droite::after {
 }
 .jaune blockquote {
   background-color: var(--PECHE-color);
-  border: 8px solid var(--JAUNE-color);
+  border: 8px solid var(--ORANGE-color);
 }
 .jaune blockquote.gauche::before {
-  border-color: var(--JAUNE-color) transparent transparent var(--JAUNE-color);
+  border-color: var(--ORANGE-color) transparent transparent var(--ORANGE-color);
 }
 .jaune blockquote.droite::before {
-  border-color: var(--JAUNE-color) var(--JAUNE-color) transparent transparent;
+  border-color: var(--ORANGE-color) var(--ORANGE-color) transparent transparent;
 }
 .jaune blockquote.gauche::after {
   border-color: var(--PECHE-color) transparent transparent var(--PECHE-color);
@@ -872,10 +873,7 @@ a.btn {
   outline: none;
   border-radius: 355px 45px 225px 75px/15px 225px 15px 255px;
   border: solid 7px;
-  border-top-color: currentcolor;
-  border-right-color: currentcolor;
-  border-bottom-color: currentcolor;
-  border-left-color: currentcolor;
+  border-color: var(--VIOLET-color);
   text-transform: uppercase;
   transition: 0.3s;
   margin-bottom: 2rem;
@@ -1278,7 +1276,7 @@ img {
   #banner {
     justify-content: flex-start;
     flex-direction: row-reverse;
-    background-color: var(--HEADER-background-color);
+    background-color: var(--BLANC-color);
     height: 2.5em;
   }
   #banner a.logo {
@@ -1407,8 +1405,17 @@ main aside h2 {
 main aside h2::after {
   content: "";
 }
+
 .accueil {
-  background-color: var(--POUDRE-color);
+  background:  var(--POUDRE-color) url(../images/pixel-joie.png) no-repeat;
+  background-position: 0 0;
+}
+.idee {
+  background:  url(../images/pixel-idee.png) no-repeat;
+  background-position: 100% 80%;
+}
+.gras {
+  font-weight: bold;
 }
 .hero {
   height: 50%;
@@ -1416,6 +1423,9 @@ main aside h2::after {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
+}
+.hero .animate-left {
+  text-align: right;
 }
 .hero h1 {
   color: var(--ROSE-color) !important;
@@ -1471,11 +1481,15 @@ p.cta:hover {
   border: 0;
   margin-bottom: 2rem;
 }
+
 .taches {
   background: url(../images/taches.png) no-repeat;
 }
 .haut-droite {
   background-position: 100% 25%;
+}
+.bas-gauche {
+  background-position: 0 100%;
 }
 .fond-peche {
   background-color: var(--PECHE-color);
@@ -1498,7 +1512,7 @@ p.cta:hover {
   color: var(--BLANC-color);
 }
 .fond-orange {
-  background-color: var(--JAUNE-color);
+  background-color: var(--ORANGE-color);
   color: var(--NOIR-color);
 }
 .fond-vert-cirton {
@@ -1790,114 +1804,7 @@ p.cta:hover {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.12), 0 15px 12px rgba(0, 0, 0, 0.22);
   }
 }
-.dialog-header {
-  border-bottom: 1px solid #b0aeae;
-  padding-bottom: 0.5em;
-}
-.dialog-header h1 {
-  font-size: 1.75em;
-  margin: 0;
-}
-.dialog-header button {
-  float: right;
-  position: absolute;
-  top: 0.5em;
-  right: 2%;
-  padding: 0.25em 0 0.25em 0.5em;
-  border: 0;
-  font-size: 1.5em;
-  background-color: inherit;
-  cursor: pointer;
-}
-.dialog-header button:focus {
-  outline: 3px solid gray;
-}
-.dialog-body {
-  padding: 1.5em 0.5em;
-  font-size: 0.9em;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.dialog-body h2 {
-  text-align: left !important;
-  padding: 0;
-  margin: 1em 0 0.5em;
-  font-size: 1.25em;
-  font-family: var(--FONT-FAMILY-sans-serif);
-  letter-spacing: 0;
-}
-.dialog-body ul {
-  padding-left: 1em;
-}
-.dialog-body ul li {
-  padding-bottom: 1em;
-}
-.dialog-footer {
-  border-top: 1px solid var(--GRIS-color);
-}
-.dialog-footer button {
-  float: right;
-  padding: 0.5em;
-  margin-top: 0.5em;
-}
-.dialog-backdrop {
-  display: none;
-  position: fixed;
-  overflow-y: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-@media screen and (min-width: 640px) {
-  .dialog-backdrop {
-    background: rgba(0, 0, 0, 0.3);
-  }
-}
-.dialog-backdrop.active {
-  display: block;
-}
-.no-scroll {
-  overflow-y: auto !important;
-}
-.has-dialog {
-  overflow: hidden;
-}
-.notes {
-  display: block;
-  font-size: 1rem;
-  line-height: 1.3;
-  min-width: 400px;
-  max-width: 100%;
-  width: 33%;
-}
-.toast {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  padding: 1rem;
-  border: none;
-  border-radius: 0.25rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  transform: translateY(-150%);
-  transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.toast.active {
-  transform: translateY(0);
-}
-.carte {
-  margin: 0 var(--MARGIN-x);
-}
-.carte iframe {
-  margin: 0;
-}
-.maps {
-  width: 100%;
-  height: 450px;
-  border: 0;
-}
+
 footer[role="contentinfo"] {
   display: block;
   background-color: var(--FOOTER-color);
@@ -1997,12 +1904,11 @@ footer[role="contentinfo"] a {
   border: 0;
 }
 footer[role="contentinfo"] .pied a {
-  color: var(--BLANC-color);
+  color: var(--NOIR-color);
 }
 footer[role="contentinfo"] .pied {
   background-color: var(--FOOTER-PIED-color);
-  border-top: 3px solid #366629;
-  color: var(--BLANC-color) !important;
+  color: var(--NOIR-color) !important;
   padding: 1em 1em 0.1em;
   display: flex;
   justify-content: space-between;
@@ -2044,9 +1950,9 @@ footer[role="contentinfo"] .pied ul li {
   margin-bottom: 1.5em;
 }
 footer[role="contentinfo"] .pied ul li:not(:last-child) a {
-  border-right: 1px solid var(--BLANC-color);
+  border-right: 1px solid var(--NOIR-color);
   padding: 0 0.5em;
-  color: var(--BLANC-color)
+  color: var(--NOIR-color)
 }
 footer[role="contentinfo"] .pied ul li:last-child a {
   padding: 0 0.5em;
