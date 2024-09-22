@@ -104,9 +104,12 @@
   --CIEL-color: #C1D8FF;
   --BLEU-color: #0F51C2;
   --MARINE-color: #0C2E66;
+  --VERT-CLAIR-color: #BAE4D3;
+  --VERT-color: #7ACAAB;
+  --VERT-FONCE-color: #40A07B;
 
-  --FOOTER-color: var(--ORANGE-color);
-  --FOOTER-PIED-color: var(--OCRE-color);
+  --FOOTER-color: var(--VERT-color);
+  --FOOTER-PIED-color: var(--VERT-FONCE-color);
 
   --HEADER-background-color: var(--ORANGE-color);
   --HEADER-TRANSPARENT-background-color: var(--GRIS-TRANSPARENT-color);
@@ -400,20 +403,20 @@ blockquote.droite::after {
 }
 
 .vert blockquote {
-  background-color: var(--VERT-AMANDE-color);
-  border: 8px solid var(--VERT-CITRON-color);
+  background-color: var(--VERT-CLAIR-color);
+  border: 8px solid var(--VERT-FONCE-color);
 }
 .vert blockquote.gauche::before {
-  border-color: var(--VERT-CITRON-color) transparent transparent var(--VERT-CITRON-color);
+  border-color: var(--VERT-FONCE-color) transparent transparent var(--VERT-FONCE-color);
 }
 .vert blockquote.droite::before {
-  border-color: var(--VERT-CITRON-color) var(--VERT-CITRON-color) transparent transparent;
+  border-color: var(--VERT-FONCE-color) var(--VERT-FONCE-color) transparent transparent;
 }
 .vert blockquote.gauche::after {
-  border-color: var(--VERT-AMANDE-color) transparent transparent var(--VERT-AMANDE-color);
+  border-color: var(--VERT-CLAIR-color) transparent transparent var(--VERT-CLAIR-color);
 }
 .vert blockquote.droite::after {
-  border-color: var(--VERT-AMANDE-color) var(--VERT-AMANDE-color) transparent transparent;
+  border-color: var(--VERT-CLAIR-color) var(--VERT-CLAIR-color) transparent transparent;
 }
 
 .rose blockquote {
