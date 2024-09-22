@@ -9,11 +9,12 @@
 		Accueil - IRISE</title>
 	<meta name="theme-color" content="#FFFFFF" />
 	<link href="favicon.ico" rel="icon">
-     <link href="/css/fontawesome.css" rel="stylesheet" media="screen">
+     <link href="css/fontawesome.css" rel="stylesheet" media="screen">
      <link href="css/base.css" rel="stylesheet" media="screen">
 </head>
 <body>
-	<div class="evitement">
+	
+<div class="evitement">
 	<nav role="navigation" aria-label="Accès rapide">
 		<ul>
 			<li><a href="#contenu">Contenu</a></li>
@@ -22,7 +23,9 @@
 		</ul>
 	</nav>
 </div>
+<div class="container">
 <header role="banner" id="banner">
+	
 	<a href="/" class="logo"><img src="images/logo.png" alt="IRISE" ></a>
 	<nav role="navigation" id="navigation" class="navbar" aria-label="Menu principal">
 		<button aria-haspopup="true" aria-expanded="false" id="hamburger" aria-controls="menu"><span class="sr-only">Menu</span></button>
@@ -71,30 +74,30 @@
 			<li><a href="contact/" >Contact</a></li>
 		</ul>
 	</nav>	
+
 </header>
-	
+</div>	
 <main role="main" id="contenu">
 	<div class="accueil">
-	<div class="hero">
-		<div class="animate-top">
-			<h1 class="text-border-main">I.R.I.S.E</h1>
-			
+	<div class="hero container">
+		<div class="animate-left">		
+			<img src="images/irise.png" alt="Association I.R.I.S.E">
 		</div>
-		<div class="animate-bottom">
-			<p>Innover dans la Rééducation Inclusive et Solidaire pour les Enfants.</p>
-			<p class="cta bas"><a href="#asso">Faisons connaissance...</a></p>
+		<div class="animate-right">
+			<h1 class="text-border-rose">I.R.I.S.E</h1>
+			<p>Innover dans la Rééducation Inclusive et Solidaire pour les Enfants</p>
 		</div>
 		
 	</div>
 </div>
 		<section class="container">
-			<h2 id="asso">L’association I.R.I.S.E.</h2>
 			<div class="grid-1a1">
 				<div class="bloc fond-violet">
 					<p>L’association I.R.I.S.E. aide les enfants atteints de troubles d’acquisition de la fonction motrice, sensorielle, cognitive, du langage et trouble de la relation. </p>
 				</div>
-				<div class="img-central text-center">
-					<img alt="IRISE" loading="lazy" src="images/logo.png">
+				<div class="text-center">
+					<P>I.R.I.S.E<br>Association à but non lucratif
+						créée en novembre 2023</P>
 					
 				</div>
 				<div class="bloc fond-fuschia">
@@ -219,17 +222,17 @@
 		</ul>
 		 <!--  <p><span>By</span> <a href="https://sofeve-concept.github.io/" target="_blank" rel="noopener norefer">Sofève Concept</a></p>  -->
 	  </div>
-
+	  <a id="RetourEnHaut" class="cInvisible" href="#top">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+		    <path
+			   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+		</svg>
+		<span class="sr-only">Retour haut de page</span></a>
+		<script src="js/script.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/reveal.js"></script>
 	
 </footer>
-<a id="RetourEnHaut" class="cInvisible" href="#top">
-	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
-	    <path
-		   d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-	</svg>
-	<span class="sr-only">Retour haut de page</span></a>
-	<script src="js/script.js"></script>
-	<script src="js/utils.js"></script>
-	<script src="js/reveal.js"></script>
+
 </body>
 </html>
