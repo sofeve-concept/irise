@@ -309,9 +309,7 @@ i[class^="fa"] {
   font-size: 2em;
   letter-spacing: 0.1em;
 }
-.container {
-  margin: 0 var(--MARGIN-x);
-}
+
 .shadow {
   box-shadow: 0 1rem 3rem var(--GRIS-TRANSPARENT-color) !important;
 }
@@ -1411,7 +1409,7 @@ main aside h2::after {
 
 .accueil {
   background:  var(--POUDRE-color) url(../images/pixel-joie.png) no-repeat;
-  background-position: 0 0;
+  background-position: 0 30%;
 }
 .idee {
   background:  url(../images/pixel-idee.png) no-repeat;
@@ -1423,29 +1421,24 @@ main aside h2::after {
 .hero {
   height: 50%;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
+  display: flex;
+ justify-content: center;
 }
+
 .hero .animate-left {
   text-align: right;
 }
-.hero h1 {
-  color: var(--ROSE-color) !important;
-  text-align: center;
-  font-size: 5em;
-  margin-top: 4rem;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-.hero  p {
-  color: FFA500 !important;
+.hero h1{ 
+  flex: 0 0 70%;
+  color: var(--NOIR-color);
   font-size: 2em;
   margin-bottom: 2em;
   font-family: var(--FONT-FAMILY-serif);
   text-align: center;
 }
-
+.hero span {
+  display: block;
+}
 p.cta {
   display: inline-block;
   background-color: var(--ROSE-color);
